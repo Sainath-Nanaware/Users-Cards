@@ -11,12 +11,13 @@
     height: 54vh;
     width: 22vw;
     border-radius: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card img{
     height: 30vh;
@@ -27,3 +28,6 @@
     font-weight: 400;
 }
 
+.card:hover{
+        background-color: #B9D9EB;
+}

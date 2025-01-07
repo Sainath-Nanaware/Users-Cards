@@ -5,28 +5,26 @@
 }
 .heading{
     position: sticky;
-    height: 72px ;
+    top: 0;
+    z-index: 10;
+    height: 64px ;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(163, 184, 184, 0.325);
+    background-color:#272921;
 }
 .heading p{
-    
-    font-size:40px;
+    color: #ffff;
+    font-size:30px;
     font-weight: 400;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(217, 116, 116);
 }
 .usersContainer{
     /* border: 1px solid red; */
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
     gap: 20px;
       
 }
 
-.userCard{
-    /* border: 1px solid rgb(50, 173, 20); */
-    
-}
