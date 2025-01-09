@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./GetUsers.css"
+import {Link} from "react-router-dom"
 import UserCard from '../UserCards/UserCard'
 
 const GetUsers = () => {
@@ -29,7 +30,8 @@ const GetUsers = () => {
         <div className='usersContainer'>
             {users.map((element)=>{
                 // return <div  className="userCard" key={element.id}>{element.firstName}</div>
-                return <UserCard  key={element.id} img={element.image} fname={element.firstName} lname={element.lastName} email={element.email} />
+                // return <UserCard  key={element.id} img={element.image} fname={element.firstName} lname={element.lastName} email={element.email} />
+                return <Link to='/userProfile/:id' ><UserCard  key={element.id} img={element.image} fname={element.firstName} lname={element.lastName} email={element.email} /></Link>
             })}
         </div>
     </>
