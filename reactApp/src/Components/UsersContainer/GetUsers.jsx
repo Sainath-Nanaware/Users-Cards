@@ -31,7 +31,7 @@ const GetUsers = () => {
             {users.map((element)=>{
                 // return <div  className="userCard" key={element.id}>{element.firstName}</div>
                 // return <UserCard  key={element.id} img={element.image} fname={element.firstName} lname={element.lastName} email={element.email} />
-                return <Link to='/userProfile/:id' ><UserCard  key={element.id} img={element.image} fname={element.firstName} lname={element.lastName} email={element.email} /></Link>
+                return <Link to={`/userProfile/${element.id}`} key={element.id}><UserCard   img={element.image} fname={element.firstName} lname={element.lastName} email={element.email} /></Link>
             })}
         </div>
     </>
